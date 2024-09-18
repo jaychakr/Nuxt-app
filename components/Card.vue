@@ -1,0 +1,17 @@
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps({
+  name: String,
+  subregion: String,
+  flag: String,
+});
+</script>
+<template>
+  <div class="card">
+    <h3>{{ props.name }}</h3>
+    <p>{{ props.subregion }}</p>
+    <img :src="props.flag" alt="" />
+  </div>
+</template>
+<style scoped>
+</style>
