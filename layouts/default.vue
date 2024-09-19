@@ -5,10 +5,16 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/blog">Blog</NuxtLink>
+            <NuxtLink to="/images">Images</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/africa">Africa</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/america">America</NuxtLink>
           </li>
         </ul>
       </nav>
