@@ -21,6 +21,7 @@ onMounted(async () => {
         :name="country.name.common"
         :subregion="country.subregion"
         :flag="country.flags.png"
+        :capital="country.capital[0]"
       />
     </li>
   </ul>
