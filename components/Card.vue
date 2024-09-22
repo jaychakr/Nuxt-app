@@ -51,8 +51,20 @@ export default {
       :src="props.flag"
       alt="flag"
       style="border: 3px solid black"
+      class="animated-img"
     />
     <img v-else :src="props.flag" alt="flag" />
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.animated-img {
+  animation: move 1s ease infinite alternate;
+  transform: translateX(0);
+}
+
+@keyframes move {
+  to {
+    transform: translateX(100px);
+  }
+}
+</style>
