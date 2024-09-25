@@ -33,7 +33,7 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 12px;
 }
 </style>

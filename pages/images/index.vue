@@ -36,3 +36,8 @@ const images = ref([
     </div>
   </main>
 </template>
+<style scoped>
+.main {
+  text-align: center;
+}
+</style>

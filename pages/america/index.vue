@@ -27,4 +27,8 @@ onMounted(async () => {
     </li>
   </ul>
 </template>
-<style scoped></style>
+<style scoped>
+ul {
+  list-style-type: none;
+}
+</style>

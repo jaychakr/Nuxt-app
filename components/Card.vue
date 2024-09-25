@@ -52,8 +52,10 @@ export default {
       alt="flag"
       style="border: 3px solid black"
       class="animated-img"
+      width="275px"
     />
-    <img v-else :src="props.flag" alt="flag" />
+    <img v-else :src="props.flag" alt="flag" width="275px" />
+    <p><b>↑↑ Click on flag to see animation ↑↑</b></p>
   </div>
 </template>
 <style scoped>
@@ -66,5 +68,8 @@ export default {
   to {
     transform: translateX(100px);
   }
+}
+.card {
+  align-items: center;
 }
 </style>

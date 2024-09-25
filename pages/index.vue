@@ -4,6 +4,7 @@ const show = ref(true);
 </script>
 <template>
   <main class="main">
+    <br />
     <p><button @click="show = !show">Toggle paragraph visibility</button></p>
     <p v-if="show">Can you see me?</p>
     <p v-else>Flying away!</p>
@@ -21,3 +22,8 @@ const show = ref(true);
     /><br /><br />
   </main>
 </template>
+<style scoped>
+main {
+  text-align: center;
+}
+</style>

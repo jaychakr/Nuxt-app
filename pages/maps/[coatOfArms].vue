@@ -4,5 +4,13 @@ const route = useRoute();
 const coatOfArms = route.params.coatOfArms;
 </script>
 <template>
-  <img :src="coatOfArms" alt="coatOfArms"/>
+  <div class="container">
+    <img :src="coatOfArms" alt="coatOfArms" />
+  </div>
 </template>
+<style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+}
+</style>
