@@ -63,7 +63,6 @@ export default {
   animation: move 1s ease infinite alternate;
   transform: translateX(0);
 }
-
 @keyframes move {
   to {
     transform: translateX(100px);

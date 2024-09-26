@@ -5,7 +5,7 @@ const coatOfArms = route.params.coatOfArms;
 </script>
 <template>
   <div class="container">
-    <img :src="coatOfArms" alt="coatOfArms" />
+    <img :src="coatOfArms" alt="coatOfArms" width="275px"/>
   </div>
 </template>
 <style scoped>

@@ -14,6 +14,12 @@
             <NuxtLink to="/accordion">Accordion</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/vuecss">Vue CSS</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/inputbox">Input Box</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/africa">Africa</NuxtLink>
           </li>
           <li>
