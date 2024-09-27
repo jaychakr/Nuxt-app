@@ -1,11 +1,19 @@
 <script setup>
 import { ref } from "vue";
 const show = ref(true);
+const attachRed = ref(false);
 </script>
 <template>
   <main class="main">
+    <!--<br />-->
+    <p>Click on box to change its color <br />↓↓↓</p>
+    <div
+      class="demo"
+      @click="attachRed = !attachRed"
+      v-bind:class="{ red: attachRed }"
+    ></div>
     <br />
-    <p><button @click="show = !show">Toggle paragraph visibility</button></p>
+    <p><button @click="show = !show">Click to interact</button></p>
     <p v-if="show">Can you see me?</p>
     <p v-else>Flying away!</p>
     <img
@@ -25,5 +33,15 @@ const show = ref(true);
 <style scoped>
 main {
   text-align: center;
+}
+.demo {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: auto;
+}
+.red {
+  background-color: red;
+  margin: auto;
 }
 </style>

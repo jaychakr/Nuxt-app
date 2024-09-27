@@ -60,12 +60,20 @@ export default {
 </template>
 <style scoped>
 .animated-img {
-  animation: move 1s ease infinite alternate;
-  transform: translateX(0);
+  animation: move 1.5s linear infinite;
 }
 @keyframes move {
-  to {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  75% {
     transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .card {
