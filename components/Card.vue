@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from "vue";
-import borderToggle from "./borderToggle";
+const animate = ref(false);
 const props = defineProps({
   name: {
     type: String,
@@ -31,13 +31,8 @@ const props = defineProps({
 const url = props.coatOfArms;
 const encodedUrl = encodeURIComponent(url);
 </script>
-<script>
-export default {
-  mixins: [borderToggle],
-};
-</script>
 <template>
-  <div class="card" @click="toggle">
+  <div class="card">
     <h3>{{ props.name }}</h3>
     <p>{{ props.subregion }}</p>
     <p>Capital: {{ props.capital }}</p>
@@ -47,14 +42,22 @@ export default {
       >
     </p>
     <img
-      v-if="border"
+      v-if="animate"
+      @click="animate = !animate"
       :src="props.flag"
       alt="flag"
-      style="border: 3px solid black"
+      style="border: 1px solid black"
       class="animated-img"
       width="275px"
     />
-    <img v-else :src="props.flag" alt="flag" width="275px" />
+    <img
+      v-else
+      @click="animate = !animate"
+      :src="props.flag"
+      alt="flag"
+      style="border: 1px solid black"
+      width="275px"
+    />
     <p><b>↑↑ Click on flag to see animation ↑↑</b></p>
   </div>
 </template>
