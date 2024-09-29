@@ -61,7 +61,6 @@ const accordionItems = ref([
           :id="'collapse' + (index + 1)"
           class="accordion-collapse collapse show"
           :aria-labelledby="'heading' + (index + 1)"
-          data-bs-parent="#accordionExample"
         >
           <div class="accordion-body" v-html="accordionItem.body"></div>
         </div>

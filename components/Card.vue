@@ -58,7 +58,7 @@ const encodedUrl = encodeURIComponent(url);
       style="border: 1px solid black"
       width="275px"
     />
-    <p><b>↑↑ Click on flag to see animation ↑↑</b></p>
+    <p><b>↑↑ Click on flag to toggle animation ↑↑</b></p>
   </div>
 </template>
 <style scoped>
@@ -70,10 +70,10 @@ const encodedUrl = encodeURIComponent(url);
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-100px);
+    transform: translateX(-50px);
   }
   75% {
-    transform: translateX(100px);
+    transform: translateX(50px);
   }
   100% {
     transform: translateX(0);
