@@ -20,7 +20,7 @@
             <NuxtLink to="/africa">Africa</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/america">America</NuxtLink>
+            <NuxtLink to="/america">Americas</NuxtLink>
           </li>
         </ul>
       </nav>
