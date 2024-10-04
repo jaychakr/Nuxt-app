@@ -4,6 +4,16 @@ const text = ref("Hello!");
 function changeText(event) {
   text.value = event.target.value;
 }
+useHead({
+  title: "Input Box",
+  meta: [
+    {
+      hid: "Vue Input Box",
+      name: "Vue Input Box",
+      content: "Vue Input Box",
+    },
+  ],
+});
 </script>
 <template>
   <main>

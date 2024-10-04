@@ -35,6 +35,16 @@ const accordionItems = ref([
             though the transition does limit overflow.`,
   },
 ]);
+useHead({
+  title: "Accordion",
+  meta: [
+    {
+      hid: "Accordion",
+      name: "Accordion",
+      content: "Accordion",
+    },
+  ],
+});
 </script>
 <template>
   <main class="main">

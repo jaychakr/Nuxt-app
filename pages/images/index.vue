@@ -23,6 +23,16 @@ const images = ref([
     title: "River in Forest",
   },
 ]);
+useHead({
+  title: "Images",
+  meta: [
+    {
+      hid: "Images",
+      name: "Images",
+      content: "Images",
+    },
+  ],
+});
 </script>
 <template>
   <main class="main">

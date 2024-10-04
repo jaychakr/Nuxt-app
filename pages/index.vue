@@ -2,6 +2,16 @@
 import { ref } from "vue";
 const show = ref(true);
 const attachRed = ref(false);
+useHead({
+  title: "Landing Page",
+  meta: [
+    {
+      hid: "Landing Page",
+      name: "Landing Page",
+      content: "Landing Page",
+    },
+  ],
+});
 </script>
 <template>
   <main class="main">

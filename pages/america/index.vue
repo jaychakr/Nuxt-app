@@ -13,6 +13,16 @@ onMounted(async () => {
     console.log(error);
   }
 });
+useHead({
+  title: "Americas",
+  meta: [
+    {
+      hid: "Americas",
+      name: "Americas",
+      content: "American Countries",
+    },
+  ],
+});
 </script>
 <template>
   <ul>
